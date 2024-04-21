@@ -134,7 +134,7 @@ new Chart(document.getElementById("line-chart"), {
             xAxes: [{
                 ticks: {
                     fontColor: 'black', // Font color of x-axis labels
-                    fontSize: 16, // Font size of x-axis labels
+                    fontSize: 14, // Font size of x-axis labels
                     fontFamily: 'Arial', // Font family of x-axis labels
                     label: 'Rodada'
                 }
@@ -142,7 +142,7 @@ new Chart(document.getElementById("line-chart"), {
             yAxes: [{
                 ticks: {
                     fontColor: 'black', // Font color of y-axis labels
-                    fontSize: 16, // Font size of y-axis labels
+                    fontSize: 14, // Font size of y-axis labels
                     fontFamily: 'Arial', // Font family of y-axis labels
                     label: 'Pontos'
                 }
