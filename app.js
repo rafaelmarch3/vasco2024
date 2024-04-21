@@ -101,5 +101,5 @@ let tableHeader = createHeader();
 let tableBody = createBody();
 let tableFooter = createFooter();
 tableElement.appendChild(tableHeader);
-// tableElement.appendChild(tableBody);
-// tableElement.appendChild(tableFooter);
+tableElement.appendChild(tableBody);
+tableElement.appendChild(tableFooter);
