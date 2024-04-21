@@ -103,3 +103,50 @@ let tableFooter = createFooter();
 tableElement.appendChild(tableHeader);
 tableElement.appendChild(tableBody);
 tableElement.appendChild(tableFooter);
+
+// Create chart
+new Chart(document.getElementById("line-chart"), {
+    type: 'line',
+    data: {
+      labels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+      datasets: [{ 
+          data: [3,3,3,6,6,9,9,9,12,13,14,14,17,20,20,21,22,22,25],
+          label: "Marquinho",
+          borderColor: "#3e95cd",
+          fill: false,
+          lineTension: 0, // Set lineTension to 0 for no interpolation
+        }, { 
+          data: [3,3,3],
+          label: "Realizado",
+          borderColor: "#8e5ea2",
+          borderWidth: 8,
+          fill: false,
+          lineTension: 0, // Set lineTension to 0 for no interpolation
+        }
+      ]
+    },
+    options: {
+        title: {
+            display: false,
+            text: 'Pontos Marquinho'
+        },
+        scales: {
+            xAxes: [{
+                ticks: {
+                    fontColor: 'black', // Font color of x-axis labels
+                    fontSize: 16, // Font size of x-axis labels
+                    fontFamily: 'Arial', // Font family of x-axis labels
+                    label: 'Rodada'
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    fontColor: 'black', // Font color of y-axis labels
+                    fontSize: 16, // Font size of y-axis labels
+                    fontFamily: 'Arial', // Font family of y-axis labels
+                    label: 'Pontos'
+                }
+            }]
+        }
+        }
+  });
