@@ -40,7 +40,18 @@ function createBody() {
         // Adding result to the row
         let result = document.createElement("td");
         result.innerText = results[i];
-        result.setAttribute("class", "table-Active");
+        if(results[i] === "V") {
+            result.setAttribute("class", "table-success");
+        }
+        if(results[i] === "E") {
+            result.setAttribute("class", "table-warning");
+        }
+        if(results[i] === "D") {
+            result.setAttribute("class", "table-danger");
+        }
+        if(results[i] === "") {
+            result.setAttribute("class", "table-light");
+        }
         row.appendChild(result);
     
         //Adding guesses to the row
@@ -68,14 +79,14 @@ function createFooter() {
     let tableFooter = document.createElement("tfoot");
     let footerRow = document.createElement("tr");
     let footerColumns = ["Total Pontos", actualPoints];
-    // Adding "Adversário" and "Resultado" to the header
+    // // Adding "Adversário" and "Resultado" to the header
     footerColumns.forEach((column) => {
         let footerColumn = document.createElement("th");
         footerColumn.innerText = column;
         footerRow.appendChild(footerColumn);
     });
 
-    // Adding players to the header
+    // // Adding players to the header
     playersPoints.forEach((column) => {
         let footerColumn = document.createElement("th");
         footerColumn.innerText = column;

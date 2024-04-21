@@ -6,3 +6,7 @@
 .nav-item>a:hover {
   color: darkred;
 }
+
+.page-title {
+  margin: 40px;
+}

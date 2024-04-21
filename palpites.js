@@ -1,6 +1,6 @@
 // Number of matches and players. This will not change
 nMatches = 19;
-nPlayers = 14;
+nPlayers = 1;
 
 // Matches. This will not change
 matches = [
@@ -26,25 +26,12 @@ matches = [
 ];
 
 // Players and guesses. This will not change
-players = ["March", "Manu", "Fifi", "Guerra", "Finho", "Saymon", "Markim", "Testa", "Poliça", "Saúde", "Allan", "Youssef", "Geninho", "Robô"];
-guesses = [["V", "E", "E", "V", "D", "E", "D", "E", "V", "E", "E", "E", "V", "E", "D", "E", "E", "E", "V"], 
-            ["E", "D", "V", "V", "D", "V", "D", "D", "E", "E", "V", "D", "E", "V", "D", "E", "E", "D", "V"],
-            ["V", "D", "V", "V", "D", "V", "E", "D", "V", "E", "E", "D", "V", "V", "D", "E", "E", "D", "V"],
-            ["E", "V", "V", "V", "D", "V", "E", "D", "E", "E", "E", "D", "V", "V", "D", "E", "V", "E", "V"],
-            ["E", "D", "E", "V", "D", "V", "D", "D", "V", "E", "E", "D", "V", "V", "D", "D", "E", "D", "V"],
-            ["V", "D", "E", "V", "D", "V", "D", "D", "V", "E", "V", "D", "V", "V", "D", "D", "E", "D", "V"],
-            ["V", "D", "E", "V", "D", "V", "E", "D", "E", "V", "E", "D", "V", "V", "D", "V", "E", "D", "V"],
-            ["V", "D", "V", "V", "D", "E", "D", "D", "E", "E", "E", "D", "V", "V", "D", "E", "V", "D", "V"],
-            ["E", "D", "V", "V", "D", "V", "D", "D", "E", "V", "E", "D", "E", "V", "D", "D", "V", "D", "V"],
-            ["V", "V", "E", "V", "D", "V", "D", "D", "E", "D", "E", "D", "V", "E", "D", "E", "E", "D", "V"],
-            ["V", "D", "V", "V", "V", "V", "V", "D", "V", "V", "V", "E", "E", "V", "E", "D", "E", "D", "V"],
-            ["V", "E", "V", "V", "D", "V", "E", "D", "V", "D", "V", "D", "V", "E", "D", "E", "V", "V", "V"],
-            ["V", "E", "V", "V", "E", "V", "E", "E", "V", "V", "V", "V", "V", "V", "D", "E", "D", "E", "V"],
-            ["V", "E", "V", "V", "D", "V", "D", "D", "V", "V", "D", "V", "V", "E", "E", "D", "V", "D", "V"]];
+players = ["Marquinho"];
+guesses = [["V", "D", "D", "V", "D", "V", "D", "D", "V", "E", "E", "D", "V", "V", "D", "E", "E", "D", "V"]];
 
 
 // Counting player points
-let playersPoints = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
+let playersPoints = ["0"];
 for(let i = 0; i < nPlayers; i++) {
     for(let j = 0; j < nMatches; j++) {
         if(guesses[i][j] === "V") {
