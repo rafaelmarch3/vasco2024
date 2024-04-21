@@ -1,0 +1,8 @@
+
+.nav-item>a {
+    color: gray;
+}
+
+.nav-item>a:hover {
+  color: darkred;
+}
