@@ -44,7 +44,7 @@ for(let i = 0; i < nPlayers; i++) {
 console.log(playersPoints);
 
 // Match results: update during the championship
-results = ["V", "D", "D", "D", "D", "V", "D", "", "", "", "", "", "", "", "", "", "", "", ""];
+results = ["V", "D", "D", "D", "D", "V", "D", "D", "E", "D", "V", "", "", "", "", "", "", "", ""];
 
 // Actual points: update during the championship
 actualPoints = "0";
